@@ -1,0 +1,16 @@
+Linked list is a special data structure in which data elements are linked to one another. Here, each element is called a node which has two parts
+
+Info part which stores the information.
+Address or pointer part which holds the address of next element of same type. Linked list is also known as self-referential structure.
+Each element (node) of a list is comprising of two items: the data and a reference to the next node.
+The last node has a reference to NULL.
+The entry point into a linked list is called the head of the list. It should be noted that head is not a separate
+node, but the reference to the first node.
+If the list is empty then the head is a null reference.
+typedef struct linkedlistnode
+{
+int data; //info
+struct linkedlistnode * next;
+}node;
+ 
+Syntax of declaring a node which contains two fields in it one is for storing information and another is for storing address of other node, so that one can traverse the list. 
